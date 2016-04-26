@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-04-23, 09:53:25
+    Author     : ATMEGA
+*/
+
+.elementWyswietlany{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px grey;
+    padding: 10px;
+}
+
+.selectElement {
+    background-color: #3d3d29;
+    border: 1px solid #000000;
+    opacity: 0.5;
+}
+
+.selectHeader
+{
+    color:#cc0000;
+    font-weight: bold;  
+    z-index: -2;
+}
+
+.imgList{
+    width: 200px;
+    height: 200px;
+    border: solid 1px #e0e0d1;
+    border-radius: 10px 10px 10px 10px;
+    z-index: -1; 
+}
+
+.imgListSelect
+{
+   border: solid 1px #000000;
+}
+
+.elementIMGWyswietlany{
+    position: relative;
+    left: 10px;
+    width: 200px;
+    height: 200px;
+    border: solid 1px #e0e0d1;
+    border-radius: 10px 10px 10px 10px;
+}
+
+elementWyswietlany div
+{
+    display: inline-block;
+}
+
+.szerokoscInput{
+   width: 300px;
+}
+
+.editPractise{
+    border: solid 1px #e0e0d1;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px grey;
+    /*padding: 20px;*/
+    margin-bottom: 50px;
+}
+
+.editPractise img{
+    border: solid 1px #e0e0d1;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px grey;
+    margin-left: 10px;
+    margin-top: 25px; 
+    width: 200px;
+    height: 200px;
+}
+
+.editPractise div div form{
+    margin-top: 25px; 
+}

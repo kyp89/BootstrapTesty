@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Moja pierwsza aplikacja w Bootstrapie</title>
+    <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="content/css/myStyle.css">    
+    <script src="content/js/jquery.js"></script>
+    <script src="content/js/animacjeJS.js"></script>
+    <script src="content/js/angular.min.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+      <div class="jumbotron">
+      <h1>Witaj, świecie!</h1>
+      <p>Witaj na przykładowej stronie</p>
+      </div>
+      <div class="container">
+      <section class="row col-xs-12 col-sm-12">
+          
+          <!------------------------------>
+          <div>
+              <div class="editPractise col-xs-10 col-sm-7">
+                  <h3 class="panel-heading">Dodaj ćwiczenie</h3> 
+                  <hr>
+                  <div class="col-xs-10 col-sm-7">
+                  <img src="content/img/barki.jpg" alt="klata" class="col-sm-2 img-responsive">
+                  <div>
+                      <form class="col-sm-4">
+                          <div class="form-group">
+                          <label>Nazwa ćwiczenia:</label>
+                          <input type="text" class="form-control szerokoscInput"/>
+                          </div>
+                          <div class="form-group">
+                          <label>Czas ćwiczenia:</label>
+                          <input type="number" class="form-control szerokoscInput" min="1"/>
+                          </div>
+                          <div>
+                          <label>Kategoria:</label>
+                          <select class="form-control szerokoscInput">
+                              <option>Barki</option>
+                              <option>Biceps</option>
+                              <option>Triceps</option>
+                              <option>Klatka piersiowa</option>
+                              <option>Brzuch</option>
+                              <option>Plecy</option>
+                              <option>Nogi</option>
+                          </select>
+                          </div>
+                          <div class="form-group">
+                          <label>Opis:</label>
+                          <textarea class="form-control szerokoscInput"></textarea>
+                          </div>
+                          <div class="form-group">   
+                          <button class="btn btn-primary">Dodaj ćwiczenia</button>
+                          </div>
+                      </form>
+                  </div>                  
+                  </div>                                   
+              </div>
+          </div>
+     
+         
+          
+      </section>
+      </div>
+      <script src="content/js/jquery.js"></script>
+    <script src="content/js/bootstrap.js"></script>
+  </body>
+</html>

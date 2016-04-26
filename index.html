@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl" ng-app="treApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Moja pierwsza aplikacja w Bootstrapie</title>
+    <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="content/css/myStyle.css">    
+    <script src="content/js/jquery.js"></script>
+    <script src="content/js/animacjeJS.js"></script>
+    <script src="content/js/angular.min.js"></script>
+    <script>
+        angular.module("treApp",[]);
+        angular.module("treApp").controller("LayoutAnimation",function($scope){
+            
+            $scope.Elementy = ['element1','element2','element3','element4','element5','element6','element7','element8'];
+            $scope.Cwiczenia = [{NazwaTypu:'Klatka piersiowa',imgURl:"content/img/klata.jpg",id:1},
+                                         {NazwaTypu:'Brzuch',imgURl:"content/img/brzuch.jpg",id:2},
+                                         {NazwaTypu:'Biceps',imgURl:"content/img/biceps.jpg",id:3},
+                                         {NazwaTypu:'Nogi',imgURl:"content/img/nogi.jpg",id:4},
+                                         {NazwaTypu:'Triceps',imgURl:"content/img/triceps.jpg",id:5},
+            
+        ];
+            
+            $scope.MoveOnElement=function(id)
+            {
+               // $(id).css('selectElement');
+                console.log('Wywolano '+id);
+                var element = angular.element('#'+id);
+                
+                if(!element.find('div').hasClass("selectElement"))
+                {
+                element.find('div').addClass("selectElement");
+                element.find('div h3').addClass("selectHeader");
+                element.find('div img').addClass("imgListSelect");
+                console.log('element nie ma klasy');
+                }else
+                {
+                    element.find('div').removeClass("selectElement");
+                    element.find('div h3').removeClass("selectHeader");
+                    element.find('div img').removeClass("imgListSelect");
+                }
+                
+            }
+        });
+        
+    </script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+      <div class="jumbotron">
+      <h1>Witaj, świecie!</h1>
+      <p>Witaj na przykładowej stronie</p>
+      </div>
+      <div class="container" ng-controller="LayoutAnimation">
+      <section class="row">
+          <div ng-repeat="i in Cwiczenia">
+          <!------------------------------>
+          <div class="btn col-xs-10 col-sm-3" id="{{i.id}}" ng-mouseenter="MoveOnElement(i.id)" ng-mouseleave="MoveOnElement(i.id)">
+              <div class="thumbnail elementWyswietlany">
+                  <img ng-src="{{i.imgURl}}" alt="klata" class="img-responsive imgList">
+                  <h3 class="panel-heading">{{i.NazwaTypu}}</h3>                  
+              </div>
+          </div>
+          </div>
+         
+          
+      </section>
+      </div>
+      <script src="content/js/jquery.js"></script>
+    <script src="content/js/bootstrap.js"></script>
+  </body>
+</html>
