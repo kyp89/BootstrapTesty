@@ -21,34 +21,33 @@
   <body>
       <div class="jumbotron">
       <h1>Bootstrap</h1>
-      <p>Poziomy form</p>
+      <p>Klasy pomocnicze Formularzy</p>
       </div>
       <div class="container">
       <section class="row col-xs-12 col-sm-12">
-          <div class="well well-sm">
-              <form class="form-inline">
-                  <div class="form-group">
-                      <input type="email" class="form-control" id="emailField" placeholder="Podaj adres e-mail">
+          <div>
+              <form class="form">
+                  <div class="form-group has-error">
+                      <label>Jakies wejscie z "Has error"</label>
+                      <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group has-success">
+                      <label>Jakies wejscie z "Has success"</label>
+                      <input type="text" class="form-control">
+                  </div>
+                   <div class="form-group has-warning">
+                      <label>Jakies wejscie z "Has warning"</label>
+                      <input type="text" class="form-control">
                   </div>
                   <div class="form-group">
-                      <input type="password" class="form-control" id="passwordField" placeholder="Podaj hasło">
+                      <label>Jakies wejscie WIELKIE</label>
+                      <input type="text" class="form-control input-lg">
                   </div>
                   <div class="form-group">
-                      <label>
-                      <input type="checkbox" class="form-control">
-                      </label>
+                      <label>Jakies wejscie MAŁE</label>
+                      <input type="text" class="form-control input-sm">
                   </div>
-                  <div class="form-control radio">
-                      <label>
-                      <input type="radio" value="Male">
-                      Mężczyzna
-                      </label>
-                      <label>
-                      <input type="radio" value="Female">
-                      Kobieta
-                      </label>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Rejestracja</button>
+                  
               </form>
           </div>
       </section>
