@@ -79,3 +79,11 @@ elementWyswietlany div
 .editPractise div div form{
     margin-top: 25px; 
 }
+
+.imgNav{
+    width: 30px;
+    height: 30px;
+    border: solid 1px #666666;
+    border-radius: 5px;
+    
+}
